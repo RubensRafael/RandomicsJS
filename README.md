@@ -22,9 +22,45 @@ Retorna um item (ou mais) sorteado de uma coleção.
 
 __collection__ (list): fonte de dados a ser sorteada.
 
-__quant__ (número, default=1): define quanto resultados serão retornados, ou seja, quantos sorteios serão feitos.
+__quant__ (número, default=1): define quantos resultados serão retornados, ou seja, quantos sorteios serão feitos.
 
 __repeat__ (bool,default=true): define se os itens sorteados poderão ser repetidos no resultado, caso quant > 1.
 
 _Se quant > 1, uma lista é retornada, com os múltiplos resultados. Se não, um item da coleção é retornado._
 _quant não pode ser maior do que collection.length, se repeat = false._
+
+## Choices _(collection,weight,quant=1,repeat=true)_
+
+Retorna um item (ou mais) sorteado de uma coleção. Baseado nas probabilidades passadas.
+
+__collection__ (list): fonte de dados a ser sorteada.
+
+__weight__ (list): Uma lista de números, que representa as
+
+__quant__ (número, default=1): define quantos resultados serão retornados, ou seja, quantos sorteios serão feitos.
+
+__repeat__ (bool,default=true): define se os itens sorteados poderão ser repetidos no resultado, caso quant > 1.
+
+_Se quant > 1, uma lista é retornada, com os múltiplos resultados. Se não, um item da coleção é retornado._
+_quant não pode ser maior do que collection.length, se repeat = false._
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

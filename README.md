@@ -1,2 +1,10 @@
 # RandomicsJS
-A library to help to make random operations, with javascript lists and strings.
+## Uma pequena biblioteca javascript para ajudar a fazer operações aleatórias com listas.
+
+basic choice choices shuflle probs
+Ao todo são 5 métodos:
+
+#Basic
+
+__min__
+__max__

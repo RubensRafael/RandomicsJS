@@ -27,6 +27,7 @@ __quant__ (número, default=1): define quantos resultados serão retornados, ou 
 __repeat__ (bool,default=true): define se os itens sorteados poderão ser repetidos no resultado, caso quant > 1.
 
 _Se quant > 1, uma lista é retornada, com os múltiplos resultados. Se não, um item da coleção é retornado._
+
 _quant não pode ser maior do que collection.length, se repeat = false._
 
 ## Choices _(collection,weight,quant=1,repeat=true)_
@@ -35,19 +36,28 @@ Retorna um item (ou mais) sorteado de uma coleção. Baseado nas probabilidades 
 
 __collection__ (list): fonte de dados a ser sorteada.
 
-__weight__ (list): Uma lista de números, que representa as
+__weight__ (list): Uma lista de números, que representa as chances de cada item ser sorteado respectivamente.
 
 __quant__ (número, default=1): define quantos resultados serão retornados, ou seja, quantos sorteios serão feitos.
 
 __repeat__ (bool,default=true): define se os itens sorteados poderão ser repetidos no resultado, caso quant > 1.
 
 _Se quant > 1, uma lista é retornada, com os múltiplos resultados. Se não, um item da coleção é retornado._
-_quant não pode ser maior do que collection.length, se repeat = false._
+_O quant não pode ser maior do que collection.length, se repeat = false._
+_Weight deve ter o mesmo tamanho da coleção.
+
+## Probs _(collection)_
+
+Retorna a chance (em um número decimal) de cada elemento de uma coleção ser sorteado.
+
+__collection__ (list): Uma lista a ser analisada.
 
 
+## Shuflle _(collection)_
 
+Embaralha uma lista. Muda a posição dos elementos aleatoriamente.
 
-
+__collection__ (lista): Lista a ser embaralhada.
 
 
 

@@ -1,5 +1,5 @@
 # RandomicsJS
-## Uma pequena biblioteca javascript para ajudar a fazer operações aleatórias com listas.
+## Um pequeno módulo javascript para ajudar a fazer operações aleatórias com listas.
 
 ##Uso
 

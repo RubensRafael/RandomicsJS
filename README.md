@@ -1,7 +1,7 @@
 # RandomicsJS
 ## Uma pequena biblioteca javascript para ajudar a fazer operações aleatórias com listas.
 
-basic choice choices shuflle probs
+
 Ao todo são 5 métodos:
 
 ## Basic _(min,max,inclusive=false)_
@@ -16,21 +16,21 @@ __inclusive__ (bool, default=false): define se inclui o número máximo no sorte
 
 
 
-## Choice _(collection,quant=1,repeat=true)_
+## Choice _(collection,t=1,repeat=true)_
 
 Retorna um item (ou mais) sorteado de uma coleção. 
 
 __collection__ (list): fonte de dados a ser sorteada.
 
-__quant__ (número, default=1): define quantos resultados serão retornados, ou seja, quantos sorteios serão feitos.
+__t__ (número, default=1): define quantos resultados serão retornados, ou seja, quantos sorteios serão feitos.
 
-__repeat__ (bool,default=true): define se os itens sorteados poderão ser repetidos no resultado, caso quant > 1.
+__repeat__ (bool,default=true): define se os itens sorteados poderão ser repetidos no resultado, caso t > 1.
 
-_Se quant > 1, uma lista é retornada, com os múltiplos resultados. Se não, um item da coleção é retornado._
+_Se t > 1, uma lista é retornada, com os múltiplos resultados. Se não, um item da coleção é retornado._
 
-_quant não pode ser maior do que collection.length, se repeat = false._
+_t não pode ser maior do que collection.length, se repeat = false._
 
-## Choices _(collection,weight,quant=1,repeat=true)_
+## Choices _(collection,weight,t=1,repeat=true)_
 
 Retorna um item (ou mais) sorteado de uma coleção. Baseado nas probabilidades passadas.
 
@@ -38,12 +38,12 @@ __collection__ (list): fonte de dados a ser sorteada.
 
 __weight__ (list): Uma lista de números, que representa as chances de cada item ser sorteado respectivamente.
 
-__quant__ (número, default=1): define quantos resultados serão retornados, ou seja, quantos sorteios serão feitos.
+__t__ (número, default=1): define quantos resultados serão retornados, ou seja, quantos sorteios serão feitos.
 
-__repeat__ (bool,default=true): define se os itens sorteados poderão ser repetidos no resultado, caso quant > 1.
+__repeat__ (bool,default=true): define se os itens sorteados poderão ser repetidos no resultado, caso t > 1.
 
-_Se quant > 1, uma lista é retornada, com os múltiplos resultados. Se não, um item da coleção é retornado._
-_O quant não pode ser maior do que collection.length, se repeat = false._
+_Se t > 1, uma lista é retornada, com os múltiplos resultados. Se não, um item da coleção é retornado._
+_O t não pode ser maior do que collection.length, se repeat = false._
 _Weight deve ter o mesmo tamanho da coleção.
 
 ## Probs _(collection)_

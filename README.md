@@ -1,6 +1,15 @@
 # RandomicsJS
 ## Uma pequena biblioteca javascript para ajudar a fazer operações aleatórias com listas.
 
+##Uso
+
+~~~
+No HTML
+<script src="https://cdn.jsdelivr.net/gh/RubensRafael/RandomicsJS@master/randomics-prod-v2.min.js"></script>
+
+No seu Javascript
+let rand = new Randomic()
+~~~
 
 Ao todo são 5 métodos:
 
@@ -66,7 +75,7 @@ _Weight deve ter o mesmo tamanho da coleção.
 
 ## Probs _(collection)_
 
-Retorna a chance (em um número decimal) de cada elemento de uma coleção ser sorteado.
+Retorna a chance (em um número decimal) de cada elemento de uma coleção ser sorteado. Analisando repetições.
 
 __collection__ (list): Uma lista a ser analisada.
 
@@ -74,7 +83,7 @@ __collection__ (list): Uma lista a ser analisada.
 
 let lista = ['Carro','Avião','Avião','Barco']
 
-rand.probs(lista)//'Avião tem 2x mais chances de ser escolhido.'
+rand.probs(lista)//Retorna uma lista de listas, com o item e sua chance de ser sorteado: [["Avião", 0.5]["Carro", 0.25]["Barco", 0.25]]
 ~~~
 
 
@@ -92,7 +101,7 @@ rand.shuflle(lista) // Pode retornar ["batata", "Carro", "Avião", "maçã", "ba
 ~~~
 
 
-
+Fique à vontade em colaborar com sugestões ou correção de erros. ;)
 
 
 

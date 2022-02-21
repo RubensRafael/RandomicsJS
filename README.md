@@ -2,7 +2,7 @@
 ## Um pequeno módulo javascript para ajudar a fazer operações aleatórias com listas.
 
 ## Uso
-Com o npm isntalado no seu computador digite: `npm i randomicsjs`
+Com o npm instalado no seu computador digite: `npm i randomicsjs`
 No seu Javascript:
 ~~~
 const randomics = require('randomicsjs')

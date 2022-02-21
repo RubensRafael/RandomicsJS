@@ -1,17 +1,20 @@
 # RandomicsJS
 ## Um pequeno módulo javascript para ajudar a fazer operações aleatórias com listas.
 
-##Uso
-
+## Uso
+Com o npm isntalado no seu computador digite: `npm i randomicsjs`
+No seu Javascript:
 ~~~
-No HTML
-<script src="https://cdn.jsdelivr.net/gh/RubensRafael/RandomicsJS@master/randomics-prod-v2.min.js"></script>
-
-No seu Javascript
-let rand = new Randomic()
+const randomics = require('randomicsjs')
+const { basic, choice, choices, probs, shuffle } = randomics 
 ~~~
 
 Ao todo são 5 métodos:
+##### basic: (min: number, max: number, inclusive?: boolean) => number;
+##### choice: (collection: any[], responses?: number, repeat?: boolean) => any;
+##### choices: (collection: any[], weight: number[], responses?: number, repeat?: boolean) => any;
+##### shuflle: (collection: any[]) => any[];
+##### probs: (collection: any[]) => any[];
 
 ## Basic _(min,max,inclusive=false)_
 

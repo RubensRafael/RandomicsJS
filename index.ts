@@ -36,6 +36,7 @@
 
     	//Retorna um item (ou mais) sorteado de uma coleção. Baseado nas probabilidades passadas.
     	//"weight" é Uma lista de números, que representa as chances de cada item ser sorteado respectivamente.
+        // Exemplo: ['foo','bar'] | [1,4] -> 'bar' tem 4 vezes mais chances de ser sorteado
 		//"responses" define quantos resultados serão retornados, ou seja, quantos sorteios serão feitos.
 		//"repeat" define se os itens sorteados poderão ser repetidos no resultado, caso de t > 1.
 		let list : any[] = []
